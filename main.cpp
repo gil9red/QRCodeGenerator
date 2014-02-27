@@ -1,9 +1,9 @@
-#include "Widget.h"
+#include "mainwindow.h"
 #include <QApplication>
 #include <QTextCodec>
 
 /*
- * Благодарность за код: https://github.com/abinghu/qt_rc
+ * Генератора кода взят отсюда: https://github.com/abinghu/qt_rc
  *
 */
 
@@ -13,7 +13,7 @@ int main(int argc, char *argv[])
 
     QApplication app(argc, argv);
 
-    Widget w;
+    MainWindow w;
     w.show();
     
     return app.exec();

@@ -8,10 +8,12 @@ TEMPLATE = app
 DESTDIR = ../bin
 
 SOURCES += main.cpp\
-        Widget.cpp \
-    QRCodeGenerator.cpp
+    QRCodeGenerator.cpp \
+    mainwindow.cpp
 
-HEADERS  += Widget.h \
-    QRCodeGenerator.h
+HEADERS  += \
+    QRCodeGenerator.h \
+    mainwindow.h
 
-FORMS    += Widget.ui
+FORMS    += \
+    mainwindow.ui
