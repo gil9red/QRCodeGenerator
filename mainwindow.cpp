@@ -87,11 +87,11 @@ void MainWindow::updateQRImage()
     int maskIndex = -1;
     QString encodeString = ui->pTextEditQRText->toPlainText();
 
-    successfulEncoding = qrEncode.EncodeData( levelIndex, versionIndex, bExtent, maskIndex, encodeString.toAscii().data() );
+    successfulEncoding = qrEncode.EncodeData( levelIndex, versionIndex, bExtent, maskIndex, encodeString.toUtf8().data() );
     if ( !successfulEncoding )
     {
         ui->image_label->clear();
-        ui->image_label->setText( "Изображение..." );
+        ui->image_label->setText( tr("QR Code...") );
         ui->labelSize->clear();
         ui->pButtonSave->setEnabled( successfulEncoding );
         return;
@@ -131,7 +131,7 @@ void MainWindow::setScale(int scale)
 
 void MainWindow::on_pButtonSave_clicked()
 {
-    const QString & path = QFileDialog::getSaveFileName( this, QString::null, "qr-код", saveFormats() );
+    const QString & path = QFileDialog::getSaveFileName( this, QString::null, "qrcode", saveFormats() );
     if ( path.isNull() )
         return;
 

@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Генератор qr-кода. Версия нулевая. Автор: Илья Петраш (gil9red).</string>
+   <string>QRCodeGenerator</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <layout class="QVBoxLayout" name="verticalLayout_3">
@@ -45,15 +45,24 @@
           <rect>
            <x>0</x>
            <y>0</y>
-           <width>172</width>
-           <height>111</height>
+           <width>177</width>
+           <height>79</height>
           </rect>
          </property>
          <layout class="QVBoxLayout" name="verticalLayout_7">
           <property name="spacing">
            <number>0</number>
           </property>
-          <property name="margin">
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <property name="topMargin">
+           <number>0</number>
+          </property>
+          <property name="rightMargin">
+           <number>0</number>
+          </property>
+          <property name="bottomMargin">
            <number>0</number>
           </property>
           <item>
@@ -62,7 +71,7 @@
              <enum>QFrame::StyledPanel</enum>
             </property>
             <property name="text">
-             <string>Изображение...</string>
+             <string>QR Code...</string>
             </property>
             <property name="alignment">
              <set>Qt::AlignCenter</set>
@@ -82,7 +91,7 @@
            <item row="0" column="0">
             <widget class="QLabel" name="label_3">
              <property name="text">
-              <string>Масштаб: </string>
+              <string>Scale:</string>
              </property>
             </widget>
            </item>
@@ -99,7 +108,7 @@
            <item row="1" column="0">
             <widget class="QLabel" name="label">
              <property name="text">
-              <string>Размер:</string>
+              <string>Size:</string>
              </property>
             </widget>
            </item>
@@ -113,7 +122,7 @@
            <item row="2" column="0">
             <widget class="QLabel" name="label_5">
              <property name="text">
-              <string>Символов:</string>
+              <string>Letters:</string>
              </property>
             </widget>
            </item>
@@ -150,7 +159,7 @@
         <item>
          <widget class="QLabel" name="label_2">
           <property name="text">
-           <string>Текст:</string>
+           <string>Text:</string>
           </property>
          </widget>
         </item>
@@ -166,7 +175,7 @@
       <item>
        <widget class="QLabel" name="label_4">
         <property name="text">
-         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/gil9red/QRCodeGenerator&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Сайт&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
+         <string>&lt;html&gt;&lt;head/&gt;&lt;body&gt;&lt;p&gt;&lt;a href=&quot;https://github.com/gil9red/QRCodeGenerator&quot;&gt;&lt;span style=&quot; text-decoration: underline; color:#0000ff;&quot;&gt;Site&lt;/span&gt;&lt;/a&gt;&lt;/p&gt;&lt;/body&gt;&lt;/html&gt;</string>
         </property>
         <property name="openExternalLinks">
          <bool>true</bool>
@@ -189,14 +198,14 @@
       <item>
        <widget class="QPushButton" name="pButtonSave">
         <property name="text">
-         <string>Сохранить как...</string>
+         <string>Save as...</string>
         </property>
        </widget>
       </item>
       <item>
        <widget class="QPushButton" name="pButtonQuit">
         <property name="text">
-         <string>Выйти</string>
+         <string>Quit</string>
         </property>
        </widget>
       </item>
@@ -210,7 +219,7 @@
      <x>0</x>
      <y>0</y>
      <width>419</width>
-     <height>20</height>
+     <height>21</height>
     </rect>
    </property>
   </widget>
