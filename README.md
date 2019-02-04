@@ -1,11 +1,11 @@
 QRCodeGenerator
 ===============
 
-Генератор qr-кодов
+QR code generator
 
 ##
 
-Генератора кода взят отсюда: https://github.com/abinghu/qt_rc
+The code generator is taken from here: https://github.com/abinghu/qt_rc
 
 ##
 
