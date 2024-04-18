@@ -1,0 +1,10 @@
+[Desktop Entry]
+Categories=Tool;Qt;
+Comment=for binaries developped in C++/QT
+Exec=QRCodeGenerator
+Name=QRCodeGenerator
+Icon=QRCodeGenerator
+StartupNotify=false
+Terminal=false
+Type=Application
+X-Deepin-Vendor=user-custom
