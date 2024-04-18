@@ -2,7 +2,7 @@ QT       += core gui
 
 greaterThan(QT_MAJOR_VERSION, 4): QT += widgets
 
-TARGET = "QRCode Generator"
+TARGET = QRCodeGenerator
 TEMPLATE = app
 
 DESTDIR = ../bin
@@ -17,3 +17,12 @@ HEADERS  += \
 
 FORMS    += \
     mainwindow.ui
+
+BINDIR  = $$PREFIX/bin
+DATADIR = $$PREFIX/share
+target.path = $$BINDIR
+desktop.files = QRCodeGenerator.desktop
+desktop.path = $$DATADIR/applications/
+icon.files = QRCodeGenerator.png
+icon.path= $$DATADIR/icons/
+INSTALLS += target desktop icon
